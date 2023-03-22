@@ -1,0 +1,17 @@
+{
+    "typescript.validate.enable": true,
+    "javascript.validate.enable": true,
+    "eslint.format.enable": true,
+    "eslint.enable": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "[typescript]": {
+        "editor.snippetSuggestions": "top",
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.showUnused": true,
+    },
+    "[javascript]": {
+        "editor.snippetSuggestions": "top",
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    },
+}

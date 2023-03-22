@@ -1,0 +1,13 @@
+{
+  "source": [
+    "/Users/user/path/to/source/repo/1",
+    {
+      "path": "/Users/user/path/to/source/repo/2",
+      "beforePublish": "yarn build"
+    }
+  ],
+  "target": [
+    "/Users/user/path/to/target/repo/1",
+    "/Users/user/path/to/target/repo/2"
+  ]
+}

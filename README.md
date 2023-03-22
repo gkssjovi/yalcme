@@ -7,7 +7,7 @@ Yalc publish and yalc update the easy way.
 ### Install
 
 ```
-yarn build:install
+npm install -g yalcme
 ```
 
 ### Usage

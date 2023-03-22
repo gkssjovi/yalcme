@@ -3,7 +3,7 @@
     "/Users/user/path/to/source/repo/1",
     {
       "path": "/Users/user/path/to/source/repo/2",
-      "beforePublish": "yarn build"
+      "beforePublish": "npm run build"
     }
   ],
   "target": [

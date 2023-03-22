@@ -1,6 +1,6 @@
 {
   "name": "yalcme",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "main": "src/index.ts",
   "homepage": "https://github.com/gkssjovi/yalcme",
   "repository": {

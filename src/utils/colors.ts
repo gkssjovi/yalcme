@@ -1,4 +1,4 @@
-import { REDIRECTED } from '../constatns';
+import { REDIRECTED } from '../constants';
 
 export enum Colors {
   Reset = '\x1b[0m',

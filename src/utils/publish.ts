@@ -15,8 +15,13 @@ export const publish = async (sourcePath: string, targets: Array<string>) => {
 
     updatePackage(sourcePath, { ...sourcePackage, version });
 
+    let path = sourcePath;
     if (isSourceObject(source)) {
-      const { beforePublish } = source;
+      const { beforePublish, distPath } = source;
+      if (distPath) {
+        path = distPath;
+      }
+
       if (beforePublish) {
         const commands = beforePublish
           .split('&&')
@@ -30,7 +35,7 @@ export const publish = async (sourcePath: string, targets: Array<string>) => {
       }
     }
 
-    await waitFor(spawn('yalc', ['publish'], { cwd: sourcePath }));
+    await waitFor(spawn('yalc', ['publish'], { cwd: path }));
 
     for (const target of targets) {
       const targetPackage = parsePackage(resolvePackage(target));

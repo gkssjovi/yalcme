@@ -1,5 +1,6 @@
 export type SourceObject = {
   path: string;
+  distPath?: string;
   beforePublish?: string;
 };
 
